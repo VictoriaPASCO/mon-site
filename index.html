@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique de Café</title>
+    <title>Boutique de Vêtements pour Femme</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,14 +11,14 @@
             padding: 0;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #ff66cc;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
         nav {
             text-align: center;
-            background-color: #f2f2f2;
+            background-color: #ff99cc;
             padding: 10px 0;
         }
         nav a {
@@ -27,7 +27,7 @@
             color: #333;
         }
         nav a:hover {
-            background-color: #ddd;
+            background-color: #ffb3d9;
         }
         .container {
             max-width: 1200px;
@@ -35,9 +35,13 @@
             padding: 20px;
             overflow: hidden;
         }
-        .section-title {
+        .featured {
             text-align: center;
             margin-bottom: 30px;
+        }
+        .featured img {
+            max-width: 100%;
+            height: auto;
         }
         .product {
             float: left;
@@ -62,7 +66,7 @@
             color: #666;
         }
         .product button {
-            background-color: #4CAF50;
+            background-color: #ff66cc;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -70,30 +74,7 @@
             transition: background-color 0.3s ease-in-out;
         }
         .product button:hover {
-            background-color: #45a049;
-        }
-        .contact-form {
-            margin-top: 50px;
-            text-align: center;
-        }
-        .contact-form input[type="text"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-            border: 1px solid #ddd;
-        }
-        .contact-form input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-        .contact-form input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #ff80e6;
         }
         footer {
             background-color: #333;
@@ -109,60 +90,46 @@
 <body>
 
 <header>
-    <h1>Bienvenue à la Boutique de Café</h1>
+    <h1>Bienvenue à la Boutique de Vêtements pour Femme</h1>
 </header>
 
 <nav>
-    <a href="#nos-cafes">Nos Cafés</a>
-    <a href="#a-propos">À Propos</a>
-    <a href="#contact">Contact</a>
+    <a href="#">Accueil</a>
+    <a href="#">Nouveautés</a>
+    <a href="#">Promotions</a>
+    <a href="#">Contact</a>
 </nav>
 
-<div class="container" id="nos-cafes">
-    <h2 class="section-title">Nos Cafés</h2>
+<div class="container">
+    <div class="featured">
+        <img src="featured.jpg" alt="Produit en Vedette">
+    </div>
+    <h2 class="section-title">Nouveautés</h2>
     <div class="product">
-        <img src="cafe1.jpg" alt="Café 1">
-        <h2>Café Arabica</h2>
-        <p>Le meilleur café Arabica du monde.</p>
-        <p>Prix: $10</p>
-        <button>Ajouter au Panier</button>
+        <img src="dress1.jpg" alt="Robe 1">
+        <h2>Robe d'Été Florale</h2>
+        <p>Parfait pour une journée ensoleillée.</p>
+        <p>Prix: $30</p>
+        <button>Acheter</button>
     </div>
     <div class="product">
-        <img src="cafe2.jpg" alt="Café 2">
-        <h2>Café Robusta</h2>
-        <p>Un café corsé avec un goût intense.</p>
-        <p>Prix: $8</p>
-        <button>Ajouter au Panier</button>
+        <img src="dress2.jpg" alt="Robe 2">
+        <h2>Robe de Soirée Élégante</h2>
+        <p>Idéal pour une soirée spéciale.</p>
+        <p>Prix: $50</p>
+        <button>Acheter</button>
     </div>
     <div class="product">
-        <img src="cafe3.jpg" alt="Café 3">
-        <h2>Café Décaféiné</h2>
-        <p>Le même goût, sans la caféine.</p>
-        <p>Prix: $12</p>
-        <button>Ajouter au Panier</button>
-    </div>
-</div>
-
-<div class="container" id="a-propos">
-    <h2 class="section-title">À Propos de Nous</h2>
-    <p>Nous sommes une boutique de café passionnée par la qualité et la saveur.</p>
-    <p>Nos cafés sont soigneusement sélectionnés par nos experts pour vous offrir une expérience inoubliable.</p>
-</div>
-
-<div class="container" id="contact">
-    <h2 class="section-title">Contactez-nous</h2>
-    <div class="contact-form">
-        <form>
-            <input type="text" placeholder="Nom" required><br>
-            <input type="text" placeholder="Email" required><br>
-            <textarea placeholder="Message" rows="4" required></textarea><br>
-            <input type="submit" value="Envoyer">
-        </form>
+        <img src="top1.jpg" alt="Top 1">
+        <h2>Haut Décontracté</h2>
+        <p>Parfait pour un look décontracté.</p>
+        <p>Prix: $20</p>
+        <button>Acheter</button>
     </div>
 </div>
 
 <footer>
-    &copy; 2024 Boutique de Café
+    &copy; 2024 Boutique de Vêtements pour Femme
 </footer>
 
 </body>
