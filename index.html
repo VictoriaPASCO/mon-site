@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique de Vêtements pour Femme</title>
+    <title>Hôtel de Luxe</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
         }
         header {
-            background-color: #ff66cc;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
         nav {
             text-align: center;
-            background-color: #ff99cc;
+            background-color: #444;
             padding: 10px 0;
         }
         nav a {
             padding: 10px 20px;
             text-decoration: none;
-            color: #333;
+            color: #fff;
         }
         nav a:hover {
-            background-color: #ffb3d9;
+            background-color: #666;
         }
         .container {
             max-width: 1200px;
@@ -35,46 +37,28 @@
             padding: 20px;
             overflow: hidden;
         }
-        .featured {
+        .section {
+            margin-bottom: 50px;
+        }
+        .section-title {
             text-align: center;
             margin-bottom: 30px;
         }
-        .featured img {
-            max-width: 100%;
-            height: auto;
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
-        .product {
-            float: left;
-            width: 30%;
-            margin: 1.66%;
-            border: 1px solid #ddd;
+        .service {
+            flex: 0 0 30%;
+            background-color: #fff;
             padding: 20px;
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .product:hover {
-            transform: translateY(-5px);
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-        }
-        .product h2 {
-            margin-top: 10px;
-        }
-        .product p {
-            color: #666;
-        }
-        .product button {
-            background-color: #ff66cc;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-        .product button:hover {
-            background-color: #ff80e6;
+        .service h3 {
+            margin-top: 0;
         }
         footer {
             background-color: #333;
@@ -90,46 +74,62 @@
 <body>
 
 <header>
-    <h1>Bienvenue à la Boutique de Vêtements pour Femme</h1>
+    <h1>Hôtel de Luxe</h1>
 </header>
 
 <nav>
     <a href="#">Accueil</a>
-    <a href="#">Nouveautés</a>
-    <a href="#">Promotions</a>
+    <a href="#">Chambres</a>
+    <a href="#">Services</a>
     <a href="#">Contact</a>
 </nav>
 
 <div class="container">
-    <div class="featured">
-        <img src="featured.jpg" alt="Produit en Vedette">
+    <div class="section">
+        <h2 class="section-title">Bienvenue à notre Hôtel de Luxe</h2>
+        <p>Nous vous invitons à vivre une expérience de séjour inoubliable dans notre hôtel de luxe. Profitez de nos chambres élégantes, de nos services de classe mondiale et de notre hospitalité exceptionnelle.</p>
     </div>
-    <h2 class="section-title">Nouveautés</h2>
-    <div class="product">
-        <img src="dress1.jpg" alt="Robe 1">
-        <h2>Robe d'Été Florale</h2>
-        <p>Parfait pour une journée ensoleillée.</p>
-        <p>Prix: $30</p>
-        <button>Acheter</button>
+
+    <div class="section">
+        <h2 class="section-title">Nos Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Spa de Luxe</h3>
+                <p>Détendez-vous et revitalisez votre esprit et votre corps dans notre spa de luxe. Profitez d'une gamme de traitements de spa relaxants.</p>
+            </div>
+            <div class="service">
+                <h3>Restaurant Étoilé</h3>
+                <p>Découvrez une cuisine exquise préparée par nos chefs étoilés dans notre restaurant primé. Savourez des plats créatifs et des vins raffinés.</p>
+            </div>
+            <div class="service">
+                <h3>Concierge 24/7</h3>
+                <p>Notre concierge dévoué est disponible 24 heures sur 24 pour répondre à vos besoins et vous offrir un service personnalisé tout au long de votre séjour.</p>
+            </div>
+            <div class="service">
+                <h3>Piscine à Débordement</h3>
+                <p>Plongez dans notre piscine à débordement spectaculaire et profitez d'une vue imprenable sur le paysage environnant. Un cadre parfait pour se détendre et se rafraîchir.</p>
+            </div>
+            <div class="service">
+                <h3>Service de Limousine</h3>
+                <p>Voyagez avec style et confort avec notre service de limousine haut de gamme. Nous vous offrons des transferts privés vers et depuis l'aéroport et d'autres destinations.</p>
+            </div>
+            <div class="service">
+                <h3>Salles de Réunion</h3>
+                <p>Organisez des réunions d'affaires réussies dans nos salles de réunion élégantes et entièrement équipées. Nous fournissons des services de restauration et de soutien technique.</p>
+            </div>
+        </div>
     </div>
-    <div class="product">
-        <img src="dress2.jpg" alt="Robe 2">
-        <h2>Robe de Soirée Élégante</h2>
-        <p>Idéal pour une soirée spéciale.</p>
-        <p>Prix: $50</p>
-        <button>Acheter</button>
-    </div>
-    <div class="product">
-        <img src="top1.jpg" alt="Top 1">
-        <h2>Haut Décontracté</h2>
-        <p>Parfait pour un look décontracté.</p>
-        <p>Prix: $20</p>
-        <button>Acheter</button>
+
+    <div class="section">
+        <h2 class="section-title">Contactez-nous</h2>
+        <p>Pour réserver votre séjour ou pour toute demande de renseignements, veuillez nous contacter.</p>
+        <p>Téléphone: +1 123 456 7890</p>
+        <p>Email: info@hotel-deluxe.com</p>
     </div>
 </div>
 
 <footer>
-    &copy; 2024 Boutique de Vêtements pour Femme
+    &copy; 2024 Hôtel de Luxe. Tous droits réservés.
 </footer>
 
 </body>
