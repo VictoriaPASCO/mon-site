@@ -1,1 +1,68 @@
-coucou
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique de Café</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+        }
+        nav a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .product {
+            float: left;
+            width: 30%;
+            margin: 1.66%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue à la Boutique de Café</h1>
+</header>
+
+<nav>
+    <a href="#">Accueil</a>
+    <a href="#">Notre Café</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="product">
+        <img src="cafe1.jpg" alt="Café 1">
+        <h2>Café Arabica</h2>
+        <p>Le meilleur café Arabica du monde.</p>
+        <p>Prix: $10</p>
+        <button>Ajouter au Panier</button>
